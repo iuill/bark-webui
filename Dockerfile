@@ -28,6 +28,6 @@ ENV LANGUAGE ja_JP:ja
 ENV LC_ALL ja_JP.UTF-8
 ENV TZ=Asia/Tokyo
 
-ENV XDG_CACHE_HOME $APP_PATH/.cache
+ENV XDG_CACHE_HOME /.cache
 
 CMD ["python", "webui.py"]

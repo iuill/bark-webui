@@ -57,4 +57,4 @@ interface = gr.Interface(
     description="A simple Bark TTS Web UI.",
 )
 
-interface.launch()
+interface.launch(server_name="0.0.0.0")

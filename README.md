@@ -1,15 +1,12 @@
-# Bark Web UI
+# bark-webui
 
-![This is the web UI for the Bark Text-to-Speech.](./image_webui.png)
+see also: https://github.com/makawy7/bark-webui
 
-### Installation
+## Usage
 
-- `git clone https://github.com/makawy7/bark-webui`
-- `pip install .`
-- `pip install gradio`
-
-### Usage
-
-- `python webui.py`
-
-Check out the [Bark](https://github.com/suno-ai/bark) for prompts and more information.
+```
+git clone https://github.com/iuill/bark-webui
+cd bark-webui
+docker build -t bark-webui .
+docker run --gpus all -it -p 7860:7860 -v ${pwd}/bark-webui/.cache:/bark-webui/.cache bark-webui
+```
